@@ -1,0 +1,9 @@
+<template name="showall">
+	<ul>
+		{{#each parties}}
+			<li>There is an alarm at {{when}}. Contact {{contact}} if late and say "{{message}}"		
+			</li>
+		{{/each}}
+	</ul>
+</template>
+

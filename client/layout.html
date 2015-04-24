@@ -1,0 +1,14 @@
+<template name="layout">
+	<div class="container">
+		<nav class="navbar navbar-default">
+			<ul class="nav nav-tabs">
+				<li role="presentation"><a href="{{pathFor 'welcome'}}">Home</a></li>
+				<li role="presentation"><a href="{{pathFor 'setAlarm'}}">Set an Alarm</a></li>
+				<li role="presentation"><a href="{{pathFor 'showall'}}">Show All Alarms</a></li>
+				<li role="presentation"><a href="{{pathFor 'show'}}">Show One Alarm</a></li>
+			</ul>
+		</nav>
+		{{>loginButtons}}
+		{{> yield}}
+	</div>
+</template>
